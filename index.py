@@ -56,10 +56,9 @@ while running:
             food.kill()
             snake.eat()
 
-    # Game over
-    if check_collision_with_screen(snake, grid.horizontal - 1, grid.vertical - 1):
-        print("Game over")
-        game_over = True
+        # Game over
+        if check_collision_with_screen(snake, grid.horizontal - 1, grid.vertical - 1):
+            game_over = True
 
     # Draw
     screen.fill("black")
